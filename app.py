@@ -17,7 +17,7 @@ import requests
 import json
 from langchain.schema import SystemMessage
 from fastapi import FastAPI
-import streamlit as st
+#import streamlit as st
 
 
 load_dotenv()
@@ -193,7 +193,7 @@ agent = initialize_agent(
 #     main()
 
 
-# 5. Set this as an API endpoint via FastAPI
+# # 5. Set this as an API endpoint via FastAPI
 app = FastAPI()
 
 
