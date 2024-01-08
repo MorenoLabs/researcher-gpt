@@ -17,10 +17,13 @@ import requests
 import json
 from langchain.schema import SystemMessage
 from fastapi import FastAPI
+import streamlit as st
+
 
 load_dotenv()
 brwoserless_api_key = os.getenv("BROWSERLESS_API_KEY")
 serper_api_key = os.getenv("SERP_API_KEY")
+openai_api_key = os.getenv("OPENAI_API_KEY")
 
 # 1. Tool for search
 
@@ -171,7 +174,7 @@ agent = initialize_agent(
 )
 
 
-# 4. Use streamlit to create a web app
+#4. Use streamlit to create a web app
 # def main():
 #     st.set_page_config(page_title="AI research agent", page_icon=":bird:")
 
